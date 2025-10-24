@@ -2,6 +2,7 @@
   "expo": {
     "name": "TrashTaskmanager",
     "slug": "TrashTaskmanager",
+    "scheme": "trashtaskmanager",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +22,21 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.jesryl.trashtaskmanager",
+      "permissions": ["NOTIFICATIONS"],
+      "icon": "./assets/icon.png"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "sounds": ["default"]
+        }
+      ]
+    ]
   }
 }
